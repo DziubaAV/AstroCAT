@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" onclick="CatJump()">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroCAT</title>
+    <link rel="shortcut icon" href="img/cat.png" type="AstroCat">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Уровень -->
+<div id="level">Level <span id="levelNumber">1</span></div>
+
+<!-- Игровые сообщения -->
+<div id="gameOver" class="gameMessage">Ты проиграл!</div>
+<div id="victory" class="gameMessage">Ты победил!</div>
+
+<!-- Игровое поле -->
+<div id="gameField">
+    <div id="background"></div>
+    <div id="scoreBlock">
+        <div>Счет:</div>
+        <div id="score">0</div>
+    </div>
+    <div id="cat"></div>
+    <div id="monstr" class="animateMonstrLvl1"></div>
+    <div id="reloadBtn" onclick="location.reload()"></div>
+</div>
+
+<!-- Правила -->
+<div class="rules">
+    <div class="rulesText">
+        <h3>Правила:</h3>
+        
+            <p>Управляйте прыжками AstroCat с помощью левой кнопки мыши.</p>
+            <p>AstroCat должен перепрыгнуть через движущиеся монстра.</p>
+        
+</div>
+
+<!-- Скрипты -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
